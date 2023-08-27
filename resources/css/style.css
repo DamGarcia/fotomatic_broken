@@ -28,11 +28,6 @@ html {
   width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
 
 /* Header */
 header {
@@ -81,38 +76,6 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 375px) {
-  header .desktop {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-
-  header .content {
-    padding: .5rem 1rem;
-  }
-
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  header .mobile li {
-    padding: 0;
-  }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-}
 
 /* Sign Up Section */
 #sign-up-section {
@@ -172,51 +135,6 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 768px) {
-  #sign-up-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-  }
-
-  #sign-up-cta {
-    position: static;
-    background-color: transparent;
-    border: none;
-  }
-
-  #sign-up-cta .content {
-    margin-top: 0;
-  }
-
-  #sign-up-cta .email {
-    display: none;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 3.125rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2.25rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #sign-up-section {
-    height: 20rem;
-    width: 500px;
-    background-position: right;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 2.25rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2rem;
-  }
-}
 
 /* Features Section */
 #features-section {
@@ -258,38 +176,6 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 768px) {
-  #features-section {
-    flex-flow: row;
-    padding: 1rem 1%;
-    height: 30rem;
-  }
-
-  .feature {
-    margin: 0.5rem;
-    padding: 1.25rem 1rem;
-    height: 90%;
-  }
-
-  .feature .content {
-    padding: 1rem;
-    font-size: 20px;
-    text-align: left;
-  }
-
-  .feature h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    line-height: 1.3;
-    padding-bottom: .5rem;
-  }
-
-  .feature h3 {
-    font-size: 1rem;
-    line-height: 1.4;
-    padding: 0;
-  }
-}
 
 /* Filters Section */
 #filters-section {
@@ -323,6 +209,183 @@ header .mobile {
   grid-template-columns: repeat(4, 1fr);
 }
 
+
+/* Quotes Section */
+#quotes-section {
+  background-color: #f3f3f3;
+}
+
+#quotes-section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+#quotes-section .quote {
+  padding-right: 1.875rem;
+  color: #4a4a4a;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+#quotes-section .quote-citation {
+  height: 1.875rem;
+}
+
+
+/* Footer */
+footer {
+  background-color: #9b9b9b;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 1.5rem 2rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+
+/* Media Queries */
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 1rem;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #features-section {
+    flex-flow: column
+  }
+  }
+  
+@media only screen and (max-width: 480px) {
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+
+/* Large Screens */
+@media only screen and (max-width: 768px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #features-section {
+    flex-flow: row;
+    padding: 1rem 1%;
+    height: 30rem;
+  }
+
+  .feature {
+    margin: 0.5rem;
+    padding: 1.25rem 1rem;
+    height: 90%;
+  }
+
+  .feature .content {
+    padding: 1rem;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .feature h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-bottom: .5rem;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #filters-section {
     padding-bottom: 0;
@@ -350,37 +413,6 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 375px) {
-  #filters-section .extra {
-    display: none;
-  }
-}
-
-/* Quotes Section */
-#quotes-section {
-  background-color: #f3f3f3;
-}
-
-#quotes-section .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
-}
-
-#quotes-section .quote {
-  padding-right: 1.875rem;
-  color: #4a4a4a;
-  font-family: "Palatino", serif;
-  font-size: 1.875rem;
-  line-height: 1.1;
-  font-style: italic;
-}
-
-#quotes-section .quote-citation {
-  height: 1.875rem;
-}
-
 @media only screen and (max-width: 768px) {
   #quotes-section .content {
     padding: 1.875rem 3rem;
@@ -398,19 +430,3 @@ header .mobile {
   }
 }
 
-/* Footer */
-footer {
-  background-color: #9b9b9b;
-}
-
-footer .content {
-  color: white;
-  display: flex;
-  font-size: 0.75rem;
-  font-family: 'Roboto', sans-serif;
-  padding: 1.5rem 2rem;
-}
-
-footer .copyright {
-  flex-grow: 1;
-}
